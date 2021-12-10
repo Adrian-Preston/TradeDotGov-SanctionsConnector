@@ -9,3 +9,5 @@ You will need to get an access token to use the service. Go to https://api.trade
 Example pages/code are included in the Examples folder and these can be duplicated and copied into your own module in your app which may give you a head start.
 
 The only (small) dependancies are where the example pages make use of the Atlas 3 default layouts.
+
+This is implemented using Mendix 9.8.0.

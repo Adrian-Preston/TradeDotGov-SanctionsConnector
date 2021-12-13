@@ -2,12 +2,12 @@
 
 This is a Mendix connector to perform a search of the Trade.Gov Sanctions list using the Consolidated Screening List API.
 
-To run a search you add a call from a microflow to the TradeDotGov Sanctions Search Action. You will supply a name, Sanctions API endpoint, an access token and a list of countries to search to the call to the TradeDotGov Sanctions Search Action.
+To run a search you first need to call the Create sanctions search request action with the endpoint and access key set. Then call the additional actions to set the parameters that you want to apply for the search, such as the name and countries applicable.
 
-You will need to get an access token to use the service. Go to https://api.trade.gov/apps/store/ita and follow the instructions in Subscribing to an API. Access is free subject to conditions. When you get the token then place it into the SanctionsRequest object.
+You will need to get a key to use the service. Go to https://developer.trade.gov/ and follow the instructions in Subscribing to an API. Access is free subject to conditions. When you get the token then place it into the SanctionsRequest object.
 
-Example pages/code are included in the Examples folder and these can be duplicated and copied into your own module in your app which may give you a head start.
+Finally call the Execute TradeDotGov sanctions search action which will return the results.
 
-The only (small) dependancies are where the example pages make use of the Atlas 3 default layouts.
+There are no dependencies.
 
 This is implemented using Mendix 9.8.0.
